@@ -1,0 +1,19 @@
+site_name: FastAPI-Auth
+repo_url: https://github.com/tokenly/tokenly-auth
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Core Modules:
+    - Crypto: crypto.md
+    - Tokens: tokens.md
+    - Middleware: middleware.md
+    - Validators: validators.md
+  - Architecture: architecture.md
