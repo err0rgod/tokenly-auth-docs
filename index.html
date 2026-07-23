@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tokenly-Auth documentation for crypto utilities, JWTs, refresh sessions, middleware, validators, and architecture."
+    />
+    <title>Tokenly-Auth Docs</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Tokenly-Auth documentation home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>
+            <strong>Tokenly-Auth</strong>
+            <small>FastAPI auth toolkit</small>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <button class="icon-button mobile-only" id="menuButton" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span class="icon-lines" aria-hidden="true"></span>
+          </button>
+          <button class="search-trigger" id="searchTrigger" type="button">
+            <span aria-hidden="true">Search</span>
+          </button>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle color theme">
+            <span id="themeLabel" aria-hidden="true">Dark</span>
+          </button>
+          <a class="repo-link" href="https://github.com/tokenly/tokenly-auth" target="_blank" rel="noreferrer">Repo</a>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar" id="sidebar" aria-label="Documentation navigation">
+          <nav id="primaryNav"></nav>
+        </aside>
+
+        <main class="content" id="content" tabindex="-1"></main>
+
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <nav id="tocNav"></nav>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <span>Built for Tokenly-Auth.</span>
+        <nav aria-label="Social links">
+          <a href="https://github.com/err0rgod" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://err0rgod.medium.com" target="_blank" rel="noreferrer">Medium</a>
+          <a href="https://x.com/err0rgod" target="_blank" rel="noreferrer">X</a>
+        </nav>
+      </footer>
+    </div>
+
+    <dialog class="search-dialog" id="searchDialog">
+      <form method="dialog" class="search-panel">
+        <div class="search-field">
+          <input id="searchInput" type="search" placeholder="Search docs" autocomplete="off" />
+          <button type="submit" aria-label="Close search">Close</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </form>
+    </dialog>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
